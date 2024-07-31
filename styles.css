@@ -517,5 +517,26 @@ footer p{
     }
     
 }
+@media(max-width: 500px){
+    .logo-img{
+        display: none;
+    }
+    
+    .title h2{
+        font-size: 15px;
+        transition: 1s;
+    }
+    .container-first{
+        display: flex;
+        margin-top: -150px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    .sect1{
+        height: 220vh;
+    }
+    
+}
 
 
