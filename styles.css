@@ -1,0 +1,521 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #000,#444, #0af);
+}
+header{
+    margin: 20px 0;
+    background: url(images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logo-img{
+    margin: 8px 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(245, 242, 231);
+    width: 90px;
+    height: 85%;
+    border-radius: 100%;
+    box-shadow: 1px 1px 8px;
+}
+.logo-p{
+    margin-top: 2px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-img p{
+    
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 8px;
+    font-family: "SimSun";
+}
+.logo-img img{
+    margin-top: 15px;
+    width: 50px;
+}
+.title{
+    background-color: #d0af8050;
+    border-radius: 100px;
+    color: #eee;
+}
+.title1{
+    padding: 0px 100px;
+}
+.title2{
+    padding: 0px 85px;
+}
+.title h2{
+    font-family: "bell mt";
+    font-size: 35px;
+}
+.inscription h2{
+    color: #eee;
+    background: linear-gradient(to right, #0af, #140e0e);
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+.inscription h2 a{
+    text-decoration: none;
+    color: #eee;
+}
+
+
+/* section */
+.sect1{
+    background: url(images/Image\ Projet\ 01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+.sect1 .profil img{
+    width: 110%;
+    height: 485px;
+    filter: drop-shadow(0 0 5px #fff);
+}
+.container{
+    position: relative;
+    margin-right: 10px;
+    border-radius: 90px 0px;
+    transition: 1s;
+}
+.container-first{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    width: 100%;
+}
+
+.container .parti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #eee;
+    font-family: poppins;
+    text-shadow: 7px 5px 20px #140e0e;
+}
+.parti div{
+    margin-right: 15px;
+}
+.container .objet h1{
+    margin: 10px 0px;
+    font-size: 20px;
+    background-color: #5a1;
+    color: #fff;
+    width: 100px;
+    padding: 0px 17px;
+    border-radius: 20px;
+}
+.container .objet h3{
+    font-size: 30px;
+}
+.container .objet h6{
+    font-size: 50px;
+}
+.localisation .date, .localisation .heure, .localisation .position {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.position{
+    margin-left: -5px;
+}
+.position img{
+    width: 35px;
+    padding: 4px;
+    border-radius: 50%;
+}
+.localisation p{
+    margin-left: 25px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.presentation{
+    display: flex;
+    margin-top: -7px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 60px;
+    width: 450px;
+}
+.presentation h1{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.img img{
+    margin: 20px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 40px black;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.color{
+    margin-top: 30px;
+    position: relative;
+    background: #fff5;
+    height: 300px;
+    width: 250px;
+}
+.code img{
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    left: 30px;
+}
+.q{
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+}
+.q p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #eee;
+}
+.tel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 55%;
+    height: 20%;
+    background: radial-gradient(#000, rgb(24, 84, 114), #eee5);
+}
+.tel p{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+.ou{
+    margin-top: 10px;
+    background-color: #0005;
+    width: 55.5%;
+    display: flex;
+    justify-content: center;
+}
+.ou p{
+    font-size: 30px;
+    color:tomato;
+    font-weight: 600;
+}
+.trai{
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    margin-top: 15px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+footer p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #eee;
+    
+}
+.animation{
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+.animation::after{
+    position: absolute;
+    content: "vous êtes super invité";
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -150px;
+    font-size: 10px;
+    font-weight: 600;
+    font-family: poppins;
+    color: #eee;
+    transform: rotate(-90deg);
+    animation: font-size 5s infinite ease-in-out;
+}
+@keyframes font-size{
+    0%{
+        font-size: 1px;
+    }
+    50%{
+        font-size: 35px;
+    }
+    100%{
+        font-size: 1px;
+    }
+}
+.animation1::after{
+    position: absolute;
+    content: url(images/ind.png);
+    padding: 10px;
+    border-radius: 50%;
+    height: 50px;
+    bottom: 20%;
+    animation: bounce 10s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+@keyframes bounce {
+    0%{
+        bottom: 2%;
+    }
+    50%{
+        bottom: 75%;
+    }
+    100%{
+        bottom: 2%;
+    }
+}
+.vide::after{
+    position: absolute;
+    content: url(images/audio.png);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    right: 58%;
+    top: 40%;
+    animation: transform 15s infinite ease-in-out;
+    animation-delay: 1s;
+}
+@keyframes transform {
+    0%{
+        transform: translate(58%, 40%);
+    }
+    5%{
+        transform: translate(400px, 180px);
+    }
+    20%{
+        transform: translate(-280px, 10px);
+    }
+    40%{
+        transform: translate(235px, -135px);
+    }
+    60%{
+        transform: translate(-372, 172px);
+    }
+    80%{
+        transform: translate(248px, 148px);
+    }
+    100%{
+        transform: translate(58%, 40%);
+    }
+}
+
+@media(max-width: 1250px){
+    .container .parti{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 1125px){
+    .color{
+        margin-top: 30px;
+        position: relative;
+        background: #fff5;
+        height: 300px;
+        width: 240px;
+        transition: 1s;
+    }
+    .code img{
+        width: 180px;
+        top: 20px;
+        left: 30px;
+        transition: 1s;
+    }
+    .tel{
+        width: 67%;
+        transition: 1s;
+    }
+    .tel p{
+        font-size: 30px;
+        color: #fff;
+        font-weight: 600;
+        transition: 1s;
+    }
+    .container-first{
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        color: #eee;
+        width: 100%;
+        transition: 1s;
+    }
+    .container .parti{
+        flex-direction: column;
+        transition: 1s;
+    }
+    .localisation p{
+        margin-left: 15px;
+        font-size: 18px;
+        transition: 1s;
+    }
+    .container .objet h3{
+        font-size: 30px;
+        transition: 1s;
+    }
+    .container .objet h6{
+        transition: 1s;
+        font-size: 30px;
+    }
+    .container-first{
+        margin-right: -70px;
+    }
+}
+@media(max-width: 980px){
+    .container-first{
+        margin-right: -120px;
+    }
+    .animation::after{
+        content: "";
+    }
+    .animation1::after{
+        content: "";
+    }
+}
+@media(max-width: 910px){
+    .container-first{
+        margin-right: -160px;
+        transition: 1s;
+    }
+    .container .parti{
+        font-size: 30px;
+        transition: 1s;
+    }
+    .sect1 .profil img{
+        width: 90%;
+        height: 478px;
+        transition: 1s;
+    }
+
+}
+@media(max-width: 890px){
+    .logo-img{
+        width: 75px;
+        height: 75%;
+        transition: 1s;
+    }
+    .logo-img p{
+        font-size: 9px;
+        line-height: 8px;
+        transition: 1s;
+    }
+    .title1{
+        padding: 0px 70px;
+        transition: 1s;
+    }
+    .title2{
+        padding: 0px 55px;
+        transition: 1s;
+    }
+    .title h2{
+        font-size: 25px;
+        transition: 2s;
+    }
+    
+    
+}
+@media(max-width: 760px){
+    .vide::after{
+        content: "";
+    }
+    .sect1{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+    }
+    .sect1 .profil{
+        position: absolute;
+        top: 0;
+        width: 65%;
+        height: 478px;
+        transition: 1s;
+    }
+    .sect1 .profil img{
+        margin: 40px 10px;
+        width: 94%;
+        transition: 1s;
+    }
+    .container-first{
+        top: -20px;
+        position: absolute;
+        left: -235px;
+
+    }
+    .tel{
+        width: 90%;
+        transition: 1s;
+    }
+    .container-first{
+        width: 480px;
+    }
+    .container-first1{
+        margin-top: -10px;
+        background-color: #5a1a;
+        width: 370px;
+        padding: 0px 10px;
+    }
+    .container .objet h3{
+        font-size: 35px;
+        transition: 1s;
+    }
+    .container .objet h6{
+        transition: 1s;
+        font-size: 35px;
+    }
+
+}
+@media(max-width: 600px){
+    .logo-img{
+        width: 75px;
+        height: 75%;
+        transition: 1s;
+    }
+    .title1{
+        padding: 0px 50px;
+        transition: 1s;
+    }
+    .title2{
+        padding: 0px 35px;
+        transition: 1s;
+    }
+    .title h2{
+        font-size: 20px;
+        transition: 1s;
+    }
+    
+}
+
+

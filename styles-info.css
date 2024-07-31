@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: radial-gradient(orange, #a75c17 , rgb(22, 1, 56));
+
+    color: #eee;
+}
+.sect1{
+    height: 40vh;
+}
+.container{
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #000,#444, #0af);
+}
+.container .bienvenue{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.container .art {
+    font-size: 60px;
+    margin: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 5px 10px #000a;
+
+}
+.container h1{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.container .fleche{
+    position: relative;
+    
+}
+.container .fleche::before{
+    position: absolute;
+    top: -30px;
+    content: url(images/send.png);
+    transform: translateX(-50%);
+    animation: top 4s infinite ease-in-out;
+    
+}
+@keyframes top {
+    0%{
+        top: -30px;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: -30px;
+    }
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    margin: 150px 40px 0px 0px;
+    width: 100%;
+    background: linear-gradient(to right, #000,#444, #0af);
+}
+.information p{
+    font-size: 25px;
+}
+.information h6{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* section 2 */
+
+.sect2 .container1{
+    margin: 0px 110px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(images/4.jpg);
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+.sect2 .container1 img{
+    width: 230px;
+    height: 230px;
+    margin: 15px 30px;
+    border: 30px solid #0005;
+    box-shadow: 5px 8px 10px;
+    border-radius: 10px;
+}
+.sect2 .container1 .root1 img:hover,
+.sect2 .container1 .root2 img:hover,
+.sect2 .container1 .root3 img:hover,
+.sect2 .container1 .root4 img:hover,
+.sect2 .container1 .root5 img:hover,
+.sect2 .container1 .root6 img:hover{
+    
+    border: 1px solid #0005;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* section 3 */
+.sect3{
+    background: linear-gradient(to right, #000,#444, #0af);
+}
+.sect3 .coord{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sect3 .coord img{
+    width: 300px;
+    border: 4px solid white;
+}
+.input p{
+    font-size: 30px;
+}
+.lui::before{
+        position: absolute;
+        top: 0;
+        right: 30%;
+        content: url(images/gauche.png);
+        transform: translateX(-50%);
+        animation: right 5s infinite ease-in-out;
+        
+    }
+@keyframes right {
+    0%{
+        right: 30%;
+    }
+    50%{
+        right: 50%;
+    }
+    100%{
+        right: 30%;
+    }
+}
+
+.trai{
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+    margin-top: 15px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+footer p{
+    margin: 10px;
+    font-size: 20px;
+    color: #eee;
+    
+}
+@media(max-width: 675px){
+    .container .bienvenue{
+        font-size: 27px;
+    }
+    .information p{
+        font-size: 17px;
+    }
+    .sect3 .coord{
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .lui::before{
+        position: absolute;
+        content: "";
+        
+    }
+    .container h1{
+        font-size: 30px;
+    }
+}
